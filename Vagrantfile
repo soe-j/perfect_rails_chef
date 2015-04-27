@@ -84,11 +84,11 @@ Vagrant.configure(2) do |config|
     chef.add_recipe 'imagemagick'
 
     chef.json = {
-      rbenv: {
-        global: "2.1.2",
-        rubies: ["2.1.2"],
-        gems: {
-          "2.1.2" => [{name: "bundler"}]
+      "rbenv" => {
+        "global" => "2.1.2",
+        "rubies" => ["2.1.2"],
+        "gems" => {
+          "2.1.2" => [{"name" => "bundler"}]
         }
       }
     }
